@@ -3,7 +3,7 @@ FROM golang:1.25-alpine as builder
 WORKDIR /app
 COPY . .
 
-RUN go build -o bot ./...
+RUN go build -o bot ./cmd/...
 
 FROM alpine
 

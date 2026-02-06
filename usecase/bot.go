@@ -1,4 +1,4 @@
-package main
+package usecase
 
 import (
 	"fmt"
@@ -31,7 +31,7 @@ func makeKeyboard(answers []entity.Answer, cols int) tgbotapi.InlineKeyboardMark
 	return tgbotapi.NewInlineKeyboardMarkup(rows...)
 }
 
-func main() {
+func StartBot() {
 	token := "8584942263:AAGmcFw6qzP5rZY1pP8X2V_yWulqlIPg6mw"
 
 	bot, err := tgbotapi.NewBotAPI(token)
